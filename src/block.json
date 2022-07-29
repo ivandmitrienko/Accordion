@@ -1,0 +1,7 @@
+[
+    {"title":"How many team members can I invite?", "text": "about 5", "id": 0},
+    {"title":"What is the maximum file upload size?", "text": "No more than 2GB. All files in your account must fit your allotted storage space.","id": 1},
+    {"title":"How do I reset my password?", "text": "On your Android phone or tablet, open your device's Settings app Google. Manage your Google Account.","id": 2},
+    {"title":"Can I cancel my subscription?", "text": "Cancel the subscriptions by emailing the service providers.", "id": 3},
+    {"title":"Do you provide additional support?", "text": "We fully support the principle of providing additional support to those with the most critical care needs.", "id": 4}
+]
