@@ -18,10 +18,16 @@ export default class App extends Component {
   }
 
 
-  handleclick = (itemsId) => {  
-    return itemsId===this.state.activeIndex ? 
-    this.setState({ activeIndex: null, activeChevron: ''}): 
-    this.setState({ activeIndex: itemsId, activeChevron: 'active', });
+  handleclick = (itemsId) => {
+
+    const newState = itemsId === this.state.activeIndex
+      ?
+      { activeIndex: null, activeChevron: '' }
+      :
+      { activeIndex: itemsId, activeChevron: 'active' };
+
+    this.setState(newState);
+
   }
 
   render() {
@@ -38,10 +44,10 @@ export default class App extends Component {
           <div className='App-content__right'>
             <h1>FAQ</h1>
             {
-              blocks.map((block) => <Block activeChevron={this.state.activeChevron} 
-              isActive={this.state.activeIndex===block.id} 
-              key={block.id} block={block} 
-              handleclick={this.handleclick}/>)
+              blocks.map((block) => <Block activeChevron={this.state.activeChevron}
+                isActive={this.state.activeIndex === block.id}
+                key={block.id} block={block}
+                handleclick={this.handleclick} />)
             }
           </div>
         </div>

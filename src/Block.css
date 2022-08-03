@@ -1,8 +1,7 @@
 .block{
     width: 350px;
     cursor: pointer;
-    border-bottom: 1.09px solid #E8E8EA;
-    
+    border-bottom: 1.09px solid #E8E8EA;   
 }
 
 .block__title{
@@ -11,9 +10,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 15px; 
-    font-size: 14px;
-  
-   
+    font-size: 14px;  
 }
 
 .block__text{
